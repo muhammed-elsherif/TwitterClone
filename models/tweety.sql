@@ -3,7 +3,7 @@ START TRANSACTION;
 SET time_zone = "+00:00";
 
 CREATE TABLE `users` (
-  `user_id` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT=21,
+  `user_id` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
   `username` varchar(40) NOT NULL,
   `email` varchar(255) NOT NULL,
   `password` varchar(32) NOT NULL,
@@ -20,7 +20,7 @@ CREATE TABLE `users` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 CREATE TABLE `tweets` (
-  `tweetID` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT=7,
+  `tweetID` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
   `status` varchar(1000) NOT NULL,
   `tweetBy` int(11) NOT NULL,
   `retweetID` int(11) NOT NULL,
@@ -33,7 +33,7 @@ CREATE TABLE `tweets` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 CREATE TABLE `comments` (
-  `commentID` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT=3,
+  `commentID` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
   `comment` varchar(140) NOT NULL,
   `commentOn` int(11) NOT NULL,
   `commentBy` int(11) NOT NULL,
@@ -42,21 +42,21 @@ CREATE TABLE `comments` (
 
 
 CREATE TABLE `follow` (
-  `followID` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT=7,
+  `followID` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
   `sender` int(11) NOT NULL,
   `receiver` int(11) NOT NULL,
   `followOn` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 CREATE TABLE `likes` (
-  `likeID` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT=2,
+  `likeID` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
   `likeBy` int(11) NOT NULL,
   `likeOn` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 
 CREATE TABLE `messages` (
-  `messageID` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT=5,
+  `messageID` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
   `message` text NOT NULL,
   `messageTo` int(11) NOT NULL,
   `messageFrom` int(11) NOT NULL,
@@ -65,7 +65,7 @@ CREATE TABLE `messages` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 CREATE TABLE `notification` (
-  `ID` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT=10,
+  `ID` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
   `notificationFor` int(11) NOT NULL,
   `notificationFrom` int(11) NOT NULL,
   `target` int(11) NOT NULL,
@@ -75,7 +75,7 @@ CREATE TABLE `notification` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 CREATE TABLE `trends` (
-  `trendID` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT=17,
+  `trendID` int(11) PRIMARY KEY NOT NULL AUTO_INCREMENT,
   `hashtag` varchar(140) NOT NULL,
   `createdOn` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;

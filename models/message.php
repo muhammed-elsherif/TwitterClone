@@ -23,7 +23,7 @@
           echo '<div class="main-msg-body-right">
               <div class="main-msg">
                 <div class="msg-img">
-                  <a href="#"><img src="'.BASE_URL.$message->profileImage.'"/></a>
+                  <a href="#"><img src="'.BASE_URL.'views/'.$message->profileImage.'"/></a>
                 </div>
                 <div class="msg">'.$message->message.'
                   <div class="msg-time">
@@ -40,7 +40,7 @@
           echo '<div class="main-msg-body-left">
             <div class="main-msg-l">
               <div class="msg-img-l">
-                <a href="#"><img src="'.BASE_URL.$message->profileImage.'"/></a>
+                <a href="#"><img src="'.BASE_URL.'views/'.$message->profileImage.'"/></a>
               </div>
               <div class="msg-l">'.$message->message.'
                 <div class="msg-time-l">
