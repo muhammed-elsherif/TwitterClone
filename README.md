@@ -9,3 +9,4 @@ In order to open it follow this steps:
  - Open your browser and write in url localhost/twitter
 
 
+open screenshots to preview the website...
