@@ -296,7 +296,7 @@ class Tweet extends User{
 			              	    <li>
 			      					<a href="#" class="more"><i class="fa fa-ellipsis-h" aria-hidden="true" style="outline:none;"></i></a>
 			      					<ul>
-			      					  <li><label class="deleteTweet" data-tweet="'.$tweet->tweetID.'" data-retweet="'.$retweet['retweetBy'].'">Delete Tweet</label></li>
+			      					  <li><label class="deleteTweet" data-tweet="'.$tweet->tweetID.'" >Delete Tweet</label></li>
 			      					</ul>
 			      				</li>' : '').'
 
