@@ -30,7 +30,7 @@ class Tweet extends User{
 			      	</div>'
 			        : '').'
 
-			        '.((!empty($tweet->retweetMsg) && $tweet->tweetID === $retweet['tweetID'] or $tweet->retweetID > 0) ? '<div class="t-show-head">
+			        '.((!empty($tweet->retweetMsg) &&  $tweet->retweetID > 0) ? '<div class="t-show-head">
 			        <div class="t-show-popup" data-tweet="'.$tweet->tweetID.'">
 			          <div class="t-show-img">
 			        		<img src="'.BASE_URL.'views/'.$user->profileImage.'"/>
@@ -212,7 +212,7 @@ class Tweet extends User{
 			      	</div>'
 			        : '').'
 
-			        '.((!empty($tweet->retweetMsg) && $tweet->tweetID === $retweet['tweetID'] or $tweet->retweetID > 0) ? '<div class="t-show-head">
+			        '.((!empty($tweet->retweetMsg) &&  $tweet->retweetID > 0) ? '<div class="t-show-head">
 			        <div class="t-show-popup" data-tweet="'.$tweet->tweetID.'">
 			          <div class="t-show-img">
 			        		<img src="'.BASE_URL.'views/'.$user->profileImage.'"/>
