@@ -1,4 +1,4 @@
-"# TwitterClone" 
+# TwitterClone 
 
 In order to open it follow this steps:
  - Clone the repo
